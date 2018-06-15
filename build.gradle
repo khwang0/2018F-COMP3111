@@ -7,9 +7,13 @@ apply plugin: 'jacoco'
 jar {
     baseName = 'webscraper'
     version =  '0.1.0'
+    destinationDir = file("${buildDir}/jar")
     manifest {
-        attributes 'Main-Class': 'comp3111.webscraper.WebScraperApplication'
+        attributes 'Implementation-Title': baseName,  
+        	'Implementation-Version': version,
+        	'Main-Class': 'comp3111.webscraper.WebScraperApplication'
     }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
 task execute(type:JavaExec) {
@@ -32,7 +36,6 @@ dependencies {
 }
 
 jacocoTestReport {
-	println("enter jacocoTestReport")
 	reports {
 		xml.enabled false
 		csv.enabled false
@@ -42,6 +45,5 @@ jacocoTestReport {
 
 
 test.doLast {
-	println("hihi")
 	jacocoTestReport.execute()
 }

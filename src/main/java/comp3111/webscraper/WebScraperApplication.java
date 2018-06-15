@@ -40,7 +40,7 @@ import javafx.stage.Stage;
  */
 public class WebScraperApplication extends Application {
 
-    private static final String uiPath = "src/main/java/ui.fxml";
+    private static final String UI_FILE = "/ui.fxml";
 	
 	/* (non-Javadoc)
 	 * @see javafx.application.Application#start(javafx.stage.Stage)
@@ -49,7 +49,8 @@ public class WebScraperApplication extends Application {
 	public void start(Stage stage) throws Exception {
 		// TODO Auto-generated method stub
     	FXMLLoader loader = new FXMLLoader();
-   		VBox root = (VBox) loader.load(new FileInputStream(uiPath));
+    	loader.setLocation(getClass().getResource(UI_FILE));
+   		VBox root = (VBox) loader.load();
    		Scene scene =  new Scene(root);
    		stage.setScene(scene);
    		stage.setTitle("WebScrapper");
