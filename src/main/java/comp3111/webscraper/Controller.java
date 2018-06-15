@@ -15,8 +15,6 @@ import java.util.List;
 
 public class Controller {
 
-	
-	
     @FXML 
     private Label labelCount; 
 

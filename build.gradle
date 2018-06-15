@@ -2,7 +2,15 @@
 //https://github.com/ksahin/introWebScraping
 
 apply plugin: 'java'
+apply plugin: 'jacoco'
 
+jar {
+    baseName = 'webscraper'
+    version =  '0.1.0'
+    manifest {
+        attributes 'Main-Class': 'comp3111.webscraper.WebScraperApplication'
+    }
+}
 
 task execute(type:JavaExec) {
    main = 'comp3111.webscraper.WebScraperApplication'
@@ -13,17 +21,27 @@ repositories {
     mavenCentral()
 }
 
+
+
 dependencies {
 	// https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit
 	compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.31'
 
 	// https://mvnrepository.com/artifact/junit/junit
 	testCompile group: 'junit', name: 'junit', version: '4.12'
+}
 
-
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.8.1'
-	compile group: 'com.github.detro', name: 'phantomjsdriver', version: '1.2.0'
-	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.0'
+jacocoTestReport {
+	println("enter jacocoTestReport")
+	reports {
+		xml.enabled false
+		csv.enabled false
+		html.destination file("${buildDir}/jacocoHTML")
+	}
 }
 
 
+test.doLast {
+	println("hihi")
+	jacocoTestReport.execute()
+}
