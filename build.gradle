@@ -1,0 +1,29 @@
+//https://ksah.in/introduction-to-web-scraping-with-java/
+//https://github.com/ksahin/introWebScraping
+
+apply plugin: 'java'
+
+
+task execute(type:JavaExec) {
+   main = 'comp3111.webscraper.WebScraperApplication'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	// https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit
+	compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.31'
+
+	// https://mvnrepository.com/artifact/junit/junit
+	testCompile group: 'junit', name: 'junit', version: '4.12'
+
+
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.8.1'
+	compile group: 'com.github.detro', name: 'phantomjsdriver', version: '1.2.0'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.0'
+}
+
+
