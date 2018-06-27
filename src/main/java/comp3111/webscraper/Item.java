@@ -1,10 +1,10 @@
 package comp3111.webscraper;
 
-import java.math.BigDecimal;
+
 
 public class Item {
 	private String title ; 
-	private BigDecimal price ;
+	private double price ;
 	private String url ;
 	
 	public String getTitle() {
@@ -13,10 +13,10 @@ public class Item {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public BigDecimal getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(BigDecimal price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 	public String getUrl() {

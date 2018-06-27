@@ -4,15 +4,21 @@
 package comp3111.webscraper;
 
 
-/**
- * Sample Skeleton for 'Untitled' Controller Class
- */
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
 import java.util.List;
 
+
+/**
+ * 
+ * @author kevinw
+ *
+ *
+ * Controller class that manage GUI interaction. Please see document about JavaFX for details.
+ * 
+ */
 public class Controller {
 
     @FXML 
@@ -35,15 +41,24 @@ public class Controller {
     
     private WebScraper scraper;
     
+    /**
+     * Default controller
+     */
     public Controller() {
     	scraper = new WebScraper();
     }
 
+    /**
+     * Default initializer. It is empty.
+     */
     @FXML
     private void initialize() {
     	
     }
     
+    /**
+     * Called when the search button is pressed.
+     */
     @FXML
     private void actionSearch() {
     	System.out.println("actionSearch: " + textFieldKeyword.getText());
@@ -57,6 +72,9 @@ public class Controller {
     	
     }
     
+    /**
+     * Called when the new button is pressed. Very dummy action - print something in the command prompt.
+     */
     @FXML
     private void actionNew() {
     	System.out.println("actionNew");
