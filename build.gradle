@@ -3,6 +3,7 @@
 
 apply plugin: 'java'
 apply plugin: 'jacoco'
+apply plugin: 'application'
 
 jar {
     baseName = 'webscraper'
@@ -16,16 +17,19 @@ jar {
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
-task execute(type:JavaExec) {
-   main = 'comp3111.webscraper.WebScraperApplication'
-   classpath = sourceSets.main.runtimeClasspath
-}
+mainClassName = 'comp3111.webscraper.WebScraperApplication'
 
 repositories {
     mavenCentral()
 }
 
-
+task debug(type:JavaExec) {
+	group 'application'
+	description 'debug'
+   jvmArgs '-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9099'
+   main = 'comp3111.webscraper.WebScraperApplication'
+   classpath = sourceSets.main.runtimeClasspath
+} 
 
 dependencies {
 	// https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit
@@ -44,6 +48,3 @@ jacocoTestReport {
 }
 
 
-test.doLast {
-	jacocoTestReport.execute()
-}
