@@ -24,7 +24,9 @@ Points are given in all-or-nothing fashion.
 
 ### Basic Tasks (20 points or 8% of course total.)
 
-1. Fill in the tab `Summary` ![](doc-img/summary.png) 
+![](doc-img/summary.png)
+
+1. Fill in the tab `Summary`  
 	1. Correctly filled the tab. [5]
 	1. Refresh contents on another search. [5]
 	1. Put "-" to Average selling price, lowest selling price and latest post for result not found. [3]
@@ -93,7 +95,7 @@ Points are given in all-or-nothing fashion.
 		1. The point being double-click will change its color and the rest of the points should restore its color to default.[2.5]
 		 	
 	
---
+---
 
 # Technical Requirement
 
@@ -107,7 +109,7 @@ Points are given in all-or-nothing fashion.
 	1.	students can apply for [GitHub Education](https://education.github.com/) to enjoy the benefits of creating unlimited private repositories at GitHub
 	1.	In your private repository setting page, add your team members and all our TAs as collaborators.
 
---
+---
 
 # Team Requirements
 
@@ -123,7 +125,7 @@ Points are given in all-or-nothing fashion.
 	1. The member implementing the task is also required to manage the Git commit log messages, testing, debugging, and documentation of the task.
 	1. Two developers may need to work on the same Java method concurrently. Team discussion meetings and version control using Git are essential to minimize conflicts during the software development process.
 
---
+---
 
 # Activities to submit
 
@@ -157,7 +159,7 @@ We expect most of the students will finish the project with reasonable efforts. 
 * No late submit.
 
 	
---
+---
 # Webscraper
 
 ## Compile
