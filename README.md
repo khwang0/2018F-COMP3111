@@ -24,7 +24,7 @@ Points are given in all-or-nothing fashion.
 
 ### Basic Tasks (20 points or 8% of course total.)
 
-1. Fill in the tab `Summary`
+1. Fill in the tab `Summary` ![](doc-img/summary.png) 
 	1. Correctly filled the tab. [5]
 	1. Refresh contents on another search. [5]
 	1. Put "-" to Average selling price, lowest selling price and latest post for result not found. [3]

@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.Hyperlink;
 import java.util.List;
 
 
@@ -28,10 +29,10 @@ public class Controller {
     private Label labelPrice; 
 
     @FXML 
-    private Label labelMin; 
+    private Hyperlink labelMin; 
 
     @FXML 
-    private Label labelLatest; 
+    private Hyperlink labelLatest; 
 
     @FXML
     private TextField textFieldKeyword;
