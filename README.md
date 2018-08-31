@@ -2,15 +2,21 @@
 ## Project Problem Statement and Activities
 
 
-> **Activity 1 Due (20%): 15-10-2018 (Wk7 Mon) 23:59**
+> **Activity 1 Due (20%): 15-10-2018 (Wk 7 Mon) 23:59**
 > Submission details will be provided on Canvas
 >
 > **Activity 2 Due (30%): 19-11-2018 (Wk 12 Mon) 23:59**
 > Submission details will be provided at Canvas
 
+## Introduction
 
+You are going to form a team of three to work on a project. The project is about web scraping - obtaining and analysis data
+from some websites automatically. You are given a skeleton code written in Java 8 that is already able to use a keyword to
+fetch some data from Craiglist. Please try the [demo program](demo.jar) to have a better idea of what the skeleton code can 
+do. You need Java 8 JDK to run and develop it. At the end of the file there is a guide to compile the project.
 
-## Tasks
+   
+
 
 ## System Requirements
 
@@ -167,7 +173,7 @@ We expect most of the students will finish the project with reasonable efforts. 
 We configure the project with Gradle. Gradle can be considered as Makefile like tools that streamline the compilation for you. In this project you
 are not required to learn how to write Gradle file. If you are interested to know how, please check out [this link](http://www.vogella.com/tutorials/Gradle/article.html).
 
-### Compile with Windows Command Prompt (Recommended)
+### Compile with Windows Command Prompt 
 
 Goto your folder and type `gradlew run`. This will build and run the project. 
 
@@ -175,7 +181,7 @@ If you want to just rerun the project without rebuilding it, you can go to the f
 there should be a jar file (e.g. `webscraper-0.1.0.jar`). Try double click on it 
 (yes, you need a GUI screen to run it). 
 
-### Compile with Mac/Linux terminal (Recommended)
+### Compile with Mac/Linux terminal 
 
 Goto your folder and type `./gradlew build`. This will build and run the project.
 
