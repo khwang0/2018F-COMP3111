@@ -33,7 +33,7 @@ Points are given in all-or-nothing fashion.
 ![](doc-img/summary.png)
 
 1. Fill in the tab `Summary`  
-	1. Correctly filled the tab. [5]
+	1. Correctly filled the tab. [#1](https://github.com/khwang0/2018F-COMP3111/issues/1)  [5]
 	1. Refresh contents on another search. [5]
 	1. Put "-" to Average selling price, lowest selling price and latest post for result not found. [3]
 	1. Put a clickable URL in the field Lowest Selling Price and Latest Post.[3]
