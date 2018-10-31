@@ -95,7 +95,7 @@ Points are given in all-or-nothing fashion.
 		1. When no data is available on a day the chart will draw one less point. [2.5]
 	1.  Update the Search Record combo box that displays the keyword of the last five searched keywords.[2.5] 
 		1. On select any of the search record and update the histogram instantly. [2.5]
-	1. The chart has proper X-axis label (Date in mm/dd/yyyy format), Y-axis label, legend which says `The average selling prize of the SEARCH_KEYWORD`.[2.5]
+	1. The chart has proper X-axis label (Date in mm/dd/yyyy format), Y-axis label, legend which says ~~`The average selling prize of the SEARCH_KEYWORD`~~ `The average selling price of the SEARCH_KEYWORD`.[2.5]
 	1. Create an event to handle double-click on a particular point of the chart.[2.5]
 		1. The console screen will be cleared and display those items posted on that day.[2.5]
 		1. The point being double-click will change its color and the rest of the points should restore its color to default.[2.5]
