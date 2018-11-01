@@ -72,7 +72,7 @@ Points are given in all-or-nothing fashion.
 
 1. Complete the Distribution tab.
 	1. Fill the price histogram with 10 equal width bins. The range of the bins should be determined by the price range of the search product. The first bin should contain the lowest price while the last bin should contain highest price. [2.5] 
-	1. The histogram has proper X-axis label, Y-axis label, legend which says `The selling prize of SEARCH_KEYWORD`.[2.5]
+	1. The histogram has proper X-axis label, Y-axis label, legend which says ~~`The selling prize of SEARCH_KEYWORD`~~ `The selling price of SEARCH_KEYWORD`.[2.5]
 	1. The histogram is able to refresh (including the axis) on another search.[2.5]
 	1. Leave the histogram empty if not result is found.[2.5]
 	1. If there is only one price of the histogram, just have one bar in the chart.[2.5]
