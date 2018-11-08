@@ -164,6 +164,11 @@ We expect most of the students will finish the project with reasonable efforts. 
 * No bonus. 
 * No late submit.
 
+
+### Additional Notes (added 8/11/2018)
+* Testing on JavaFX may require additional framework and that is not required. However, if you have done it, it would be counted toward your coverage test. You can also opt to exclude them in calculating the coverage. Please state your re-calculation in your READM.md if you choose to exclude.
+* Check the Issue page for and FAQ questions.
+
 	
 ---
 # Webscraper
