@@ -5,7 +5,7 @@
 > **Activity 1 Due (20%): 15-10-2018 (Wk 7 Mon) 23:59**
 > Submission details will be provided on Canvas
 >
-> **Activity 2 Due (30%): 19-11-2018 (Wk 12 Mon) 23:59**
+> **Activity 2 Due (30%): ~~19-11-2018 (Wk 12 Mon) 23:59~~ 30-11-2018 (Wk 13 Fri) 23:59**
 > Submission details will be provided at Canvas
 
 ## Introduction
